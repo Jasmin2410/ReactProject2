@@ -1,0 +1,139 @@
+@media (min-width:100px) {
+  .finalresult{
+    font-size: 20px;
+  }
+  .square{
+    height:50px;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .btn{
+    width:50%;
+    padding-top: 10px;
+    font-size: 10px;
+    height:50px;
+    
+  }
+}
+
+.board-row {
+  display: flex;
+  /* border-collapse: collapse; */
+  justify-content: space-evenly;
+  align-items: center;
+
+
+}
+
+.board-container {
+  outline:0px solid transparent;
+  margin: auto;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+
+.App {
+  width: 100%;
+  margin: auto;
+  padding-top: 5%;
+  padding: 5%;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+  display: flex;
+  flex-direction: column;
+}
+
+.btn:hover {
+  cursor: pointer;
+  /* opacity: 2; */
+  background-color: aquamarine;
+  --text-color: white;
+}
+
+.top:hover {
+  cursor: pointer;
+
+}
+
+.btn {
+  
+  width: 50%;
+  height: 80px;
+  margin: auto;
+  font-size: 20px;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-top: 5%;
+  border: none;
+}
+
+:root {
+ 
+  --text-color: hsl(0, 88%, 3%);
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+  background-color: var(--background-color);
+  min-height: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(0.5rem, 1rem + 2vw, 5rem);
+  font-weight: 70;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom:5%;
+}
+
+
+.wrapper>div {
+  grid-area: 1/1/-1/-1;
+}
+
+.top {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.bottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, rgb(81, 57, 73) 53%, var(--text-color) 65%);
+  background: linear-gradient(to bottom, #dceb02 0%, #7aeb02 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.finalresult {
+  color: black;
+ 
+  font-family: "Oswald", sans-serif;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+}
+
+.finalresult:hover {
+  color: white;
+  cursor: pointer;
+  
+}
+.sym{
+  font-size: 40px;
+  color: white;
+}
+
+
